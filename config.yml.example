@@ -9,7 +9,7 @@ libraries:
     - pmm: languages        ##subtitles
       template_variables:
         languages:
-          - pl                     ###Your subtitle language use key https://metamanager.wiki/en/latest/defaults/overlays/languages.html#supported-audio-subtitle-language-flags
+          - pl                     ###Your subtitle language https://metamanager.wiki/en/latest/defaults/overlays/languages.html#supported-audio-subtitle-language-flags
           #- en                    ### Second subtitles 
         use_subtitles: true
         file: config/overlays/flags/<<key>>.png
