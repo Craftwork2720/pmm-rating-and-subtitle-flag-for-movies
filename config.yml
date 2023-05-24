@@ -1,0 +1,24 @@
+#### python plex_meta_manager.py --run
+libraries:      
+
+  Movies:   ### library name in plex
+    operations: 
+      mass_critic_rating_update: imdb
+    overlay_path:
+    - file: config/overlays/overlays_movies_rating     ### ratings YML       
+###FLAGS for subtitles use just one language
+    - pmm: languages        ##subtitles
+      template_variables:
+        languages:
+          - pl                     ###Your subtitle language use key https://metamanager.wiki/en/latest/defaults/overlays/languages.html#supported-audio-subtitle-language-flags
+        use_subtitles: true
+        file: config/overlays/flags/<<key>>.png
+        text: " "
+        back_width: 60
+        back_height: 120
+        back_color: "#FFFFFF00"
+        horizontal_offset: 180
+        horizontal_align: right
+        vertical_offset: 35
+        vertical_align: bottom 
+    - remove_overlays: false
